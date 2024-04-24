@@ -1,0 +1,6 @@
+{
+  "service": "CRM",
+  "cspDomains": {
+    "connect-src": ["https://gohighlevelexpressflow.onrender.com/"]
+  }
+}

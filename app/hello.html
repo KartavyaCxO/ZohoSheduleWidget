@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.2/axios.min.js"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"
+      integrity="sha256-xLD7nhI62fcsEZK2/v8LsBcb4lG7dgULkuXoXB/j91c="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      /*    window.onload= async() => {
+        console.log("Hello World");
+        const calendarId =  new URLSearchParams(window.location.search).get("calendar");
+        const startDate = new Date().getTime();
+        const endDate = new Date().getTime() + 86400000;
+        console.log(startDate, endDate, calendarId)
+        const query = new URLSearchParams({
+          calendarId,
+          startDate,
+          endDate
+        });
+        const res = await axios.get(`https://gohighlevelexpressflow.onrender.com/freeslots?${query}`)
+        .then((res) => {
+          console.log(res.data);
+          document.getElementById("calendar-name").innerHTML = res.data;
+        })
+        .catch((err) => {
+          console.log(err);
+        });
+
+
+        
+
+      }; */
+    </script>
+  </head>
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: "Roboto", sans-serif;
+      list-style: none;
+      margin: 0;
+      outline: none;
+      padding: 0;
+    }
+
+    body {
+      background: #dfebed;
+      font-family: "Roboto", sans-serif;
+    }
+  </style>
+  <body>
+    <a
+      style="text-decoration: none"
+      href="https://127.0.0.1:5000/app/widget.html"
+      >◄ BACK</a
+    >
+    <div>
+      <div class="container"></div>
+    </div>
+  </body>
+</html>
