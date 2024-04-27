@@ -47,6 +47,8 @@
               email,
               phone
             );
+            //do not show the calendar
+            document.getElementById("main").style.display = "none";
             document.getElementById("fields-missing").style.display = "block";
             document.getElementById("fields-missing").innerHTML =
               "Please fill in all the fields <br> First Name, Last Name, Email, Phone Number";
@@ -71,8 +73,10 @@
                 const eventDuration = document.createElement("span");
                 eventDuration.innerText = `Event Duration: ${calendar.slotDuration}`;
                 button.appendChild(eventDuration);
-                button.onclick = () => {
-                  window.location.href = `/app/hello.html?calendar=${calendar.id}`;
+
+                button.onclick = async() => {
+                 await sessionStorage.setItem("calendar", calendar.id);
+                   window.location.href = `/app/hello.html?calendar=${calendar.id}`;
                 };
                 document
                   .getElementById("calendarContainer")
